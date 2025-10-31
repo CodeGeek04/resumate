@@ -1,0 +1,191 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Shivam Mittal} \\ \vspace{1pt}
+    \small +91 8851660028 $|$ \href{mailto:shivammittal2124@gmail.com}{\underline{shivammittal2124@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/shivammittal21/}{\underline{www.linkedin.com/in/shivammittal21/}} $|$
+    \href{https://github.com/CodeGeek04}{\underline{github.com/CodeGeek04}}
+\end{center}
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{Delhi, India}
+      {B.Tech. in Computer Science}{2021 - 2025}
+  \resumeSubHeadingListEnd
+
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Software Developer}{May 2025 - September 2025}
+      {Morphle Labs}{Gurgaon, India}
+      \resumeItemListStart
+        \resumeItem{Engineered scalable medical automation solutions, reducing manual workflows by 60\% and improving operational efficiency.}
+        \resumeItem{Developed advanced image processing frameworks for enhanced diagnostic capabilities and data analysis.}
+        \resumeItem{Implemented developer productivity tools, streamlining engineering workflows and accelerating project delivery.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {AI Innovation Specialist}{April 2024 - May 2025}
+      {IgniteTech}{Remote}
+      \resumeItemListStart
+        \resumeItem{Led full-stack development for MyPersonas.ai and Eloquens.ai, contributing to a 20\% increase in customer retention and preventing \$2M in potential revenue loss.}
+        \resumeItem{Modernized legacy codebases across multiple platforms, enhancing system stability and optimizing application performance by 15\%.}
+        \resumeItem{Collaborated with cross-functional teams to translate complex customer problems into robust technical solutions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{June 2024 - August 2024}
+      {Clausewise}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed and integrated advanced AI and NLP features into a contract management platform, improving document processing efficiency by 25\%.}
+        \resumeItem{Contributed to building a robust contract management platform, ensuring data integrity and system reliability for legal operations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer}{April 2024 - August 2024}
+      {Homeland Connect}{Remote}
+      \resumeItemListStart
+        \resumeItem{Managed and optimized systems handling 50,000+ tasks per project for a task management system, ensuring high availability and performance.}
+        \resumeItem{Developed and maintained responsive mobile application components, delivering a seamless user experience across platforms.}
+        \resumeItem{Built a robust platform processing over 10,000 daily inputs with 99.9\% uptime, demonstrating expertise in scalable backend services.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Linklee.in - Custom Link Management Platform} $|$ \emph{Next.js, PostgreSQL, Redis, Cloudflare}}{2024}
+          \resumeItemListStart
+            \resumeItem{Architected and deployed a full-stack link management platform, handling 10,000+ daily inputs with 99.9\% uptime.}
+            \resumeItem{Implemented custom subdomain functionality using Next.js, PostgreSQL, and Redis, enhancing user experience and platform flexibility.}
+            \resumeItem{Optimized data retrieval and caching strategies with Redis and Cloudflare, significantly improving application performance and scalability.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: TypeScript, Python, JavaScript, Go, Java, C/C++, AppScript} \\
+     \textbf{Frameworks}{: Node.js, React, Next.js, FastAPI, Express.js} \\
+     \textbf{Developer Tools}{: Docker, Kubernetes, AWS, PostgreSQL, Redis, Git, CI/CD, Prisma ORM} \\
+     \textbf{Libraries}{: PyTorch, Hugging Face, LangChain, Computer Vision}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
