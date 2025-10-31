@@ -20,14 +20,11 @@ RUN pnpm install
 # Copy source code
 COPY . .
 
-# Build Next.js app
-RUN npm run build
-
 # Expose port
 EXPOSE 3000
 
-# Set environment to production
-ENV NODE_ENV=production
+# Set environment to development
+ENV NODE_ENV=development
 
-# Start the application
-CMD ["npm", "start"]
+# Start the application in dev mode
+CMD ["npm", "run", "dev"]

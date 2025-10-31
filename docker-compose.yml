@@ -5,7 +5,11 @@ services:
     build: .
     ports:
       - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=development
       - GEMINI_API_KEY=${GEMINI_API_KEY}
     restart: unless-stopped
